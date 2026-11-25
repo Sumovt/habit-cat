@@ -1,2 +1,92 @@
-# habit-cat
-A cute habit-forming web game inspired by Travel Frog (旅行青蛙). Raise a cat by completing custom daily/weekly/monthly goals. Earn XP &amp; coins, level up, and redeem custom rewards. Core: daily habit building.
+# 🐱 習慣小貓 · Habit Cat
+
+> 療癒系習慣養成網頁遊戲，靈感來自經典《旅行青蛙》（旅かえる）。
+
+把青蛙換成小貓，把「旅行」換成**你自己定義的每日／每週／每月目標**。  
+完成目標就能獲得 **XP** 與 **金幣**，用 XP 提升等級，用金幣兌換自己設定的獎勵。
+
+**核心只有一件事：幫助你養成每天的好習慣。**
+
+---
+
+## ✨ 特色
+
+- 🐱 **可愛小貓陪伴** — 等級提升時外觀會變化，完成目標會開心跳一下
+- 📅 **三種目標週期**
+  - **每日**：每天重置，適合喝水、運動、早睡等小習慣
+  - **每週**：每週重置，適合較大一點的任務
+  - **每月**：每月重置，適合長期目標
+- ⭐ **XP 與等級系統** — 完成越多，等級越高
+- 🪙 **金幣 + 自訂獎勵商店** — 你可以自己新增「看一集劇」「買杯咖啡」等獎勵，用金幣兌換給自己甜頭
+- 💾 **本機儲存** — 資料存在瀏覽器 localStorage，也可匯出／匯入備份
+- 📱 **手機友善** — 單頁應用，適合放在手機主畫面當 PWA 使用
+
+---
+
+## 🎮 怎麼玩
+
+1. 打開網頁後會看到小貓和預設的幾個目標
+2. 點目標左邊的方框完成它 → 立刻獲得 XP 與金幣
+3. 到「目標」頁面可以新增、編輯、刪除自己的每日／每週／每月目標
+4. 到「商店」頁面新增你想要的獎勵，存夠金幣就兌換
+5. 等級會隨著 XP 慢慢提升，小貓也會越來越開心
+
+沒有壓力、沒有失敗懲罰，只有溫柔的正向回饋。
+
+---
+
+## 🚀 線上使用 / 部署
+
+### 方法一：直接開檔案
+下載後用瀏覽器打開 `index.html` 即可（建議用 Chrome / Safari）。
+
+### 方法二：GitHub Pages（推薦）
+1. Fork 或 clone 本專案
+2. 到 Repo → Settings → Pages
+3. Source 選 `Deploy from a branch`，Branch 選 `main` / `/ (root)`
+4. 幾分鐘後就會有網址：`https://你的帳號.github.io/habit-cat/`
+
+### 方法三：其他靜態託管
+Netlify、Vercel、Cloudflare Pages 都可直接拖曳資料夾部署。
+
+---
+
+## 🛠 技術說明
+
+- 純前端：HTML + CSS + Vanilla JavaScript
+- 無框架、無建置步驟
+- 資料全部存在 `localStorage`（key: `habit-cat-v1`）
+- 每日／每週／每月會自動重置「完成」狀態（保留目標本身）
+
+---
+
+## 📁 專案結構
+
+```
+habit-cat/
+├── index.html    # 完整遊戲（單檔）
+└── README.md
+```
+
+---
+
+## 🗺 未來可能加入的功能（歡迎 PR）
+
+- [ ] 連續完成天數（Streak）與徽章
+- [ ] 更多小貓表情與簡單動畫
+- [ ] 簡易統計圖表（本週完成率）
+- [ ] 暗色模式
+- [ ] 多隻小貓或外觀自訂
+- [ ] 匯出成圖片分享「今天的小貓」
+
+---
+
+## 📄 License
+
+MIT License — 歡迎隨意使用、修改、分享。
+
+靈感來源：[旅行青蛙 / 旅かえる](https://ja.wikipedia.org/wiki/%E6%97%85%E3%81%8B%E3%81%88%E3%82%8B)（Hit-Point）
+
+---
+
+用溫柔的方式照顧自己的習慣，小貓會陪著你一起慢慢變好 🌿
